@@ -5,7 +5,7 @@ import { Avatars, Client, Databases, Storage, Users } from "node-appwrite"
 const client = new Client()
   .setEndpoint(env.appwrite.endpoint) // Your API Endpoint
   .setProject(env.appwrite.projectId) // Your project ID
-  .setProject(env.appwrite.apikey)
+  .setKey(env.appwrite.apikey)
 
 const databases = new Databases(client)
 const avatars = new Avatars(client)
